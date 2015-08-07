@@ -276,7 +276,7 @@ asqplusb( 2 , 3 )
 # arguments with defined default values need not be specified:
 asqplusb( a=2 , b=1 )
 asqplusb( a=2 )  # b gets default value
-asqplusb( b=1 )  # error: a has no default value
+# asqplusb( b=1 )  # error: a has no default value
 asqplusb( 2 )    # value is assigned to first argument
 
 ####################################################################
@@ -289,8 +289,7 @@ if ( x <= 3 ) {  # if x is less than or equal to 3
   show("big")    # display the word "big"
 }                # end of 'else' clause
 # The placement of curly brace before 'else' matters:
-if ( x <= 3 ) { show("small") }
-else { show("big") }  # error!
+if ( x <= 3 ) { show("small") } else { show("big") }  # error!
 
 for ( countDown in 5:1 ) {
   show(countDown)
